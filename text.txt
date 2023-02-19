@@ -55,6 +55,8 @@ git remote add origin
   511  git add 12345.txt
   512  git commit -m "Ne0 Commit"
   513  git push
+$ git push -u origin main
+
 
 
 
