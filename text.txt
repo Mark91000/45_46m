@@ -57,6 +57,26 @@ git remote add origin
   513  git push
 $ git push -u origin main
 
+git checkout . otmena posl.izmenenij
+git clean -xdn
+git clean -xdf -udalenie nenuzhnyh fajlov.
+git restore --staged vozvrat faila posle git add
+git reset imja faila -- staraja komanda 
+----------------------------------------
+posle git commit 
+git commit --amend -m "Bed commi" + file
+
+git log 
+git log --oneline
+
+git status
+ubit fail             git reset HEAD~1
+
+posle push
+git revert HEAD                  udalenie poslednege pusha
+
+diff sravnit
+
 
 
 
