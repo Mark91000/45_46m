@@ -75,7 +75,108 @@ ubit fail             git reset HEAD~1
 posle push
 git revert HEAD                  udalenie poslednege pusha
 
-diff sravnit
+diff                             sravnit
+
+git log --oneline --graph --decorate --all
+
+git branch -v                    gde ja nahozhus
+git branch -d test               udalit vetku test
+
+git merge                        objedenenie
+
+git checkout main     perekljuchenie mezhdu vetkami
+git status
+
+git checkout -b 
+------------------------------------------------------------------------------------------------------------------------
+                                    Список часто используемых команд Git
+
+                                          Получение и создание проектов
+
+
+git init                                                         Инициализация локального git репозитория
+                                         
+git clone ssh://git@github.com/[username]/[repository-name].git Копирование удаленного git репозитория
+
+                                         Управление снапшотами
+
+
+git status                          Проверка статуса
+
+git add [file-name.txt]             Добавление файла в stage
+
+git add -A                          Добавление всех новых и измененных файлов в stage
+
+git commit -m "[commit message]"    Создание коммита
+
+git rm -r [file-name.txt]           Удаление файла или каталога
+
+git clean -xdf (n)                  Удалить не отслеживаемые (новые файлы) -n сначала посмотреть 
+
+git checkout [file-name]            Отмена изменений в work directory
+
+git restore --staged [file name]    Возврат файла из stage в work directory
+
+git commit --amend -m "[commit message]"   Изменить, дополнить последний коммит
+
+git revert HEAD                     Изменяет последний коммит на зеркальный
+
+git reset HEAD ~ [number]           Откат на некоторое [number] количество коммитов
+
+
+                                   Branching & Merging
+
+
+git branch                         Список веток (астериском отмечена текущая ветка)
+
+git branch [branch name]           Создание новой ветки
+
+git checkout -b [branch name]       Создание новой ветки и переключение на нее
+
+git checkout -b [branch name] origin/[branch name]      Клонирование удаленной ветки и переключение на нее
+
+git branch -m [old branch name] [new branch name]       Переименование локальной ветки
+
+git checkout [branch name]                              Переключение на ветку
+
+git branch -d [branch name]                             Удаление ветки
+
+git push origin --delete [branch name]                 Удаление ветки на уделенном ресурсе
+
+git merge [branch name]                                Объединение ветки в активную ветку
+
+git merge [source branch] [target branch]              Объединение ветки в целевую ветку
+
+
+                                    Обновление проектов
+
+
+git push                                Отправка изменений в внешний (удаленный) репозиторий (в сохраненную ветку)
+
+git push origin [branch name]           Отправка ветки в удаленный репозиторий
+
+git push -u origin [branch name]        Отправка ветки в нелокальный репозиторий (с сохранением ветки)
+
+git pull                                Обновление локального репозитория до последнего коммита
+
+git pull origin [branch name]           Получение всех изменений из удаленного репозитоиия
+
+git remote add origin ssh://git@github.com/[username]/[repository-name].git     Добавление удаленного репозитория
+
+
+                                      Inspection & Comparison
+
+
+git log                                                Просмотр изменений
+
+git log --oneline                                     Просмотр изменений (сокращенный)
+
+git log --oneline --decorate --graph --all            Отображение веток 
+
+git diff [source branch] [target branch]              Просмотр изменений перед обьединением
+
+git help                                               Помощь по командам git
+
 
 
 
