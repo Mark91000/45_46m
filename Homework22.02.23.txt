@@ -1,0 +1,14 @@
+ 1 уровень сложности: 1.Как отказаться от изменений в файле (файлах) находящийся в рабочем каталоге (work directory)? -   git checkout . 
+  git checkout fileName.txt
+
+2.Как вернуть файл из индекса в рабочий каталог? - git restore --staged fileName.txt
+
+3.Как отменить ошибочный commit ? - git reset HEAD 
+
+4.Как создать новую ветку и переключится в нее? - git checkout -b(name)
+
+5.В чем отличение между fast-forward merge  and non fast-forfard merge? - Fast-forward merge это когда  из вливаемой ветки извлекаются несколько коммитов, а затем merge применяется к последнему коммиту целевой ветки. non fast-forfard merge это когда  merge применяется к более позднему коммиту  минуя более ранние , стоящие в той-же ветке.
+
+
+6.Можно ли удалить ветку? Как? - Git checkout name(имя ветки куда пройти) 
+git branch -d name
